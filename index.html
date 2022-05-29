@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Code Quiz</title>
+    <link rel="stylesheet" href="./assets/styles.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.5.0/css/bootstrap.min.css"
+    />
+  </head>
+
+  <body>
+    <!--header including score and timer-->
+    <div id="container">
+      <div class="row">
+        <div id="score" class="col-6"> 
+          <a href="#">View high scores</a>
+        </div>
+        <div id="timer" class="col-6">
+            <p class="d-flex justify-content-end time">Time:</p></div>
+      </div>
+    </div>
+
+
+<!--main content-->
+<!-- Container for Intro, Questions, Answers -->
+<div class="container">
+    <!--Introduction-->
+    <section id="intro">
+        <div class="row">
+             <div>
+                 <h1 class="d-flex justify-content-center text-center">Coding Quiz Challege</h1>
+                <p class="d-flex justify-content-center text-center"> Try to answer the following code-related qeuestions within the time
+                    limit. Keep in mind that the incorrect answers will penalize your score/time by ten seconds.</p>
+                <button id="start" type="button" class="btn btn-info mx-auto d-block">Start Quiz</button>
+            </div>
+         </div>
+    </section>
+ 
+      <!-- Section for Question and Answers // Show upon Start-->
+      <section id="questions">
+        <div class="row">
+            <div>
+                <h2 id="question">Question Here</h2>
+                <ul class="px-0 py-0 nobullets">
+                    <li class="mb-3"><button id="answer1" value="0" type="button"
+                            class="btn btn-info">Answer1</button></li>
+                    <li class="mb-3"><button id="answer2" value="1" type="button"
+                            class="btn btn-info">Answer2</button></li>
+                    <li class="mb-3"><button id="answer3" value="2" type="button"
+                            class="btn btn-info">Answer3</button></li>
+                    <li class="mb-3"><button id="answer4" value="3" type="button"
+                            class="btn btn-info">Answer4</button></li>
+                </ul>
+                <div id="yesno">
+                    <!--correct or incorrect answer logic is in JS-->
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--final score and initials-->
+    <section id="finalscore">
+        <div class="row">
+            <div>
+                <h2>All done!</h2>
+                <p>Your final score is: <span id="score" class="pl-1">0</span></p>
+                <!-- <p class="score">Your final score is: </p> -->
+                <p>Enter initials: <span class="ml-1"><input placeholder="initials" id="initials" /></span>
+                    <button id="submit-score" class="btn btn-info mx-1 my-1 d-inline-block">Submit</button>
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!--high scores-->
+    <section id="highscores">
+        <div class="row">
+            <div class="col-6">
+                    <h2>High Scores</h2>
+                    <ol id="score-list">
+                    </ol>
+                    <button id="goback" class="btn btn-info d-inline-block mx-1 my-1">Go back</button>
+                    <button id="clearscores" class="btn btn-info mx-1 my-1 d-inline-block">Clear scores</button>
+            </div>
+        </div>
+    </section>
+
+</div>
+</main>
+</body>
+
+  <script src="assets/script.js"></script>
+</html>
