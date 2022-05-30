@@ -25,4 +25,4 @@ This is a Javascript quiz to test your knownledge about Javascript. There are 8 
 
 ## Links
 ---
-Link to application here:
+Link to application here: https://triciaax.github.io/code-quiz/
